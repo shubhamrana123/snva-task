@@ -19,7 +19,7 @@ const FirstScreen = () => {
     setCount3(0)
   };
   return (
-    <>
+    <> <Typography variant="h3"> Screen 1:</Typography>
       <Stack id='container' maxWidth={'650px'} sx={{
 
         padding: 3,

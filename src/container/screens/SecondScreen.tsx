@@ -16,7 +16,7 @@ const SecondScreen = () => {
   console.log('airport', airport)
   const airportDataObject: AirportDataProps[] = airport
   return (
-    <>
+    <> <Typography variant="h3"> Screen 2:</Typography>
       <Stack className='container' width='560px' sx={{ border: 1, borderColor: 'gray', padding: 3 }}>
         <Stack sx={{
           display: 'flex',
