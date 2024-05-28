@@ -1,4 +1,4 @@
-import { Box, Grid, Stack } from '@mui/material'
+import { Box, Grid, Stack, Typography } from '@mui/material'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import ToDoCard from '../component/Card'
@@ -17,24 +17,7 @@ const [todosList,setTodosList] = useState([])
     },[])
   return (
 <>
-{/* <Grid container>
-{todosList?.map((item:any)=>(
-   <Grid item>
-    <ToDoCard/>
-   </Grid>
-))}
-</Grid> */}
-{/* <Stack sx={{border:1,borderColor:'red',minHeight:'100vh'
-
-}}>
-{todosList?.map((item:any)=>(
-   
-    <ToDoCard todoData={item}/>
-
-))}
-
-
-</Stack> */}
+<Typography variant='h3' m={2}> Second Screen</Typography>
 <Box   sx={{
           display: "grid",
           flexDirection: "row",
