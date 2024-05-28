@@ -32,7 +32,7 @@ function App() {
   
   {/* <Task suggestions ={arr} filterSuggestion={filterSuggestions}/> */}
   <NewTask/>
-{/* <Cards/> */}
+<Cards/>
    </>
   );
 }

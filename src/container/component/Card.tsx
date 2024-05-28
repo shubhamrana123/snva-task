@@ -23,9 +23,9 @@ const ToDoCard = ({todoData}:any) => {
         </Stack>
    
       </CardContent>
-      <CardActions>
+      {/* <CardActions>
         <Button size="small">Learn More</Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
 </>
   )
