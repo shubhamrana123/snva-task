@@ -6,25 +6,33 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-import FirstScreen from "./container/screens/FirstScreen";
-import SecondScreen from "./container/screens/SecondScreen";
+
+
+
+
+import NewTask from "./container/screens/NewTask";
+import Cards from "./container/screens/Cards";
 
 
 function App() {
-  const [count1,setCount1] = useState<any>(0)
-  const [count2,setCount2] = useState<any>(0)
-  const [count3,setCount3] = useState<any>(0)
+
   const [value, setValue] = React.useState('Economy');
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue((event.target as HTMLInputElement).value);
-    setCount1(0);
-    setCount2(0);
-    setCount3(0)
+
+
+  const filterSuggestions = (suggestion:any, userInput:any) => {
+    
+    console.log('sugesstion',suggestion)
+    console.log('userinput',userInput)
+    return suggestion?.toLowerCase()?.startsWith(userInput.toLowerCase());
   };
+
+
   return (
    <>
-  <FirstScreen/>
-  <SecondScreen/>
+  
+  {/* <Task suggestions ={arr} filterSuggestion={filterSuggestions}/> */}
+  <NewTask/>
+<Cards/>
    </>
   );
 }
